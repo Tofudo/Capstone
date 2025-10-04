@@ -1,0 +1,53 @@
+.booking-type {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 6rem;
+    color: #333; // or your theme color
+}
+
+.custom-button-wrapper {
+    display: flex;
+    justify-content: center; // center horizontally
+    gap: 60px; // space between buttons
+    margin-top: 4rem; // spacing from top
+
+    // optional: stack on mobile
+    flex-wrap: wrap;
+}
+
+// Base style for all custom buttons
+.custom-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 180px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2rem;
+
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: transform 0.2s ease, opacity 0.2s ease;
+
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+        transform: scale(1.1);
+        opacity: 0.9;
+    }
+}
+
+// Specific background images
+.passenger-book {
+    background-image: url("/public/images/passenger.svg");
+}
+
+.cargo-book {
+    background-image: url("/public/images/cargo.svg");
+}

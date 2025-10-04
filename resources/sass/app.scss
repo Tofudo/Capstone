@@ -1,0 +1,79 @@
+@use 'bootstrap/scss/bootstrap';
+@use 'homepage';
+@use 'book';
+@use 'passenger';
+@use 'login';
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEAD NAV */
+.hero {
+    position: relative;
+    height: 225px;
+    background: url('/public/images/nav_background.png') center/cover no-repeat;
+
+    @media (max-width: 768px) {
+    height: 120px; // hide nav on tablets & smaller
+  }
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.11);
+}
+
+.hero-logo {
+    position: absolute;
+    top: 20px;       /* adjust vertical position */
+    left: 40px;      /* push away from the edge */
+    z-index: 10;     /* ensure it’s above overlay */
+
+    @media (max-width: 768px) {
+    display: none; // hide nav on tablets & smaller
+  }
+}
+
+.hero-logo img {
+    max-height: 150px; /* adjust size as needed */
+    width: auto;
+    object-fit: contain;
+}
+
+.hero-nav {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    width: 800px;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50px;
+    padding: 0.5rem 1.4rem;
+    backdrop-filter: blur(6px);
+
+    @media (max-width: 768px) {
+    display: none; // hide nav on tablets & smaller
+  }
+}
+
+.hero-nav .nav-item {
+    margin: 0 5px; /* adjust spacing between buttons */
+}
+
+.hero-nav .nav-link {
+    color: #333;
+    font-weight: 600;
+    padding: 0.5rem 1rem;  /* add some clickable space */
+    border-radius: 20px;   /* smooth pill-like highlight */
+    transition: all 0.3s ease;
+}
+
+.hero-nav .nav-link:hover {
+    background-color: #fff;  /* white highlight on hover */
+    color: #0d6efd;          /* keep your blue text when hovered */
+}
+

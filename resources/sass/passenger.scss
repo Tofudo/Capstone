@@ -1,0 +1,120 @@
+.trip-booking-container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    .col-md-6 {
+        &.text-center {
+            // This will apply to both image + options sections
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    // 🔹 Image styles
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    // 🔹 Booking title
+    h2 {
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+    }
+
+    // 🔹 Options wrapper
+    .d-flex {
+        display: flex;
+        justify-content: center;
+        gap: 2rem; // change this value to control spacing between Passenger/Cargo
+    }
+
+    // 🔹 Individual radio buttons
+    .form-check {
+        margin: 0;
+
+        .form-check-input {
+            cursor: pointer;
+        }
+
+        .form-check-label {
+            margin-left: 0.5rem;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
+
+    // 🔹 Responsive adjustments
+    @media (max-width: 768px) {
+        .d-flex {
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+
+}
+
+.trip-calendar-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end; // align the whole thing to the right
+}
+
+.calendar-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 2px solid #afafaf;
+  border-radius: 8px; // 🔹 rounded corners
+  background-color: #fff;
+  width: 250px; // adjust as needed
+  height: 50px;
+}
+
+.calendar-input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 0.5rem 2.5rem 0.5rem 1rem; // space for icon on right
+  font-size: 1rem;
+  text-align: left; // keeps date toward left
+  border-radius: 8px; // 🔹 matches wrapper
+}
+
+.calendar-icon {
+  position: absolute;
+  right: 0.75rem;  // lock to right edge
+  color: #666;
+  font-size: 1.2rem;
+  pointer-events: none;
+}
+
+.calendar-input::-webkit-calendar-picker-indicator {
+  opacity: 0; // hide native icon
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.proceed-btn {
+    margin-top: 50px;
+    font-size: 25px;
+    border-radius: 35px;       /* rounded corners */
+    border: 2px solid #0d6dfd00; /* custom border color */
+    background-color: #1E2541;
+    color: #ffffff;            /* text color */
+    padding: 0.8rem 6.5rem;    /* button size */
+    transition: all 0.3s ease;
+}
+
+.proceed-btn:hover {
+    background-color: #0d6efd; /* fill on hover */
+    color: #fff;               /* text turns white */
+    text-decoration: none;
+}
