@@ -1,7 +1,7 @@
 <h1 align="center">INITIAL CONFIGURATION/INSTALLATION OF THE PROJECT</h1>
 1. Download Composer (preferably the latest version) <br>
 2. Download XAMPP (also preferably the latest version) <br>
-   - XAMPP already has PHP so no need to download PHP <br>
+> XAMPP already has PHP so no need to download PHP <br>
 3. Download Node.js (preferably the latest version) <br>
 4. Make sure you already have VS Code installed <br>
 5. Open XAMPP <br>
