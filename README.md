@@ -9,21 +9,31 @@
 7. Open the project in VS Code <br>
 8. Open New Terminal in VS Code <br>
 9. Run the PHP command: <br>
+
 ``php composer install``<br>
 10. Rename the .env.example file to .env <br>
 11. Create the key by using the following command: <br>
+
 ``php artisan key:generate``<br>
 12. Execute the migrations using the following command: <br>
+
 ``php artisan migrate``<br>
+
 or <br>
+
 ``php artisan migrate:fresh //to recreate the tables``<br>
 13. Execute the seeders using the following command: 
+
 ``php artisan db:seed``<br>
 14. Run the npm installation command: <br>
+
 ``npm install``<br>
 15. Run the PHP server using the following command: <br>
+
 ``php artisan serve``<br>
+
 16. Create a new terminal in VS Code and run the Node.js server using the following command: <br>
+
 ``npm run dev``<br>
 
 <h1 align="center">User Data Testing Credentials</h1>
