@@ -28,7 +28,7 @@ or <br>
     and click the link `http://127.0.0.1:8000`
 16. Create a new terminal in VS Code and run the Node.js server using the following command: <br>
 ```npm run dev```<br>
-    and click the link localhost:5173
+    and click the link `http://localhost:5173/`
 
 <h1 align="center">Running the Project</h1>
 These instructions are for: <br>
@@ -40,7 +40,7 @@ These instructions are for: <br>
    and click the link 127.0.0.1:8000 <br>
 3. Create anoter New Terminal in VS Code and run the following command: <br>
 ```npm run dev```<br>
-    and click the link `localhost:5173` <br>
+    and click the link `http://localhost:5173/` <br>
 
 <h1 align="center">User Data Testing Credentials</h1>
 
