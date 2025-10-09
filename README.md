@@ -25,7 +25,7 @@ or <br>
 ```npm install```<br>
 15. Run the PHP server using the following command: <br>
 ```php artisan serve```<br>
-    and click the link 127.0.0.1:8000
+    and click the link `http://127.0.0.1:8000`
 16. Create a new terminal in VS Code and run the Node.js server using the following command: <br>
 ```npm run dev```<br>
     and click the link localhost:5173
@@ -40,13 +40,13 @@ These instructions are for: <br>
    and click the link 127.0.0.1:8000 <br>
 3. Create anoter New Terminal in VS Code and run the following command: <br>
 ```npm run dev```<br>
-    and click the link localhost:5173 <br>
+    and click the link `localhost:5173` <br>
 
 <h1 align="center">User Data Testing Credentials</h1>
 
 **To access the login page,**
  - make sure the project is running
- - enter the link: `127.0.0.1:8000/authorized/login`
+ - On the tab where the peoject is running, change the link to: `http://127.0.0.1:8000/authorized/login`
 
 
 **Admin Credentials**
