@@ -92,6 +92,7 @@ and make sure that your branch is up to date with the remote repository. Otherwi
  - `git branch` <br>
  - `git status`<br>
  - `git pull` <br>
+
 2. To create a new branch, use the following command: <br>
 `git branch newBranch` <br>
 3. To switch to the new branch, use the following command: <br>
