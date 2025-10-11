@@ -46,11 +46,12 @@ These instructions are for: <br>
     and click the link `http://localhost:5173/` <br>
 
 <h1 align="center">Updating the Project</h1>
-These instructions are for: <br>
-- If you have cloned the repository locally in your PC/Laptop and there are additional changes pushed in the repository <br>
-- If you have any additional changes to push to the repository <br>
-- If you want to merge update from one branch to another
-- If you want to make another branch
+
+**These instructions are for:** <br>
+ - If you have cloned the repository locally in your PC/Laptop and there are additional changes pushed in the repository <br>
+ - If you have any additional changes to push to the repository <br>
+ - If you want to merge update from one branch to another <br>
+ - If you want to make another branch
 
 <h3 align="center">Fetching Content from Remote Repository</h3>
 1. Check the status of the repository by opening a terminal in VS Code and using the following command:<br>
