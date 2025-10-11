@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.admin-nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  color: #fff;
+  padding-top: 10px;
+  padding-left: 10px;
+  overflow-y: auto;
+  transition: width 0.3s ease;
+  background-color: #485b8c;
+  width: 250px;
+}
+
+.anav{
+  list-style: none;
+  margin: 0;
+  padding: 0 10px;
+}
+
+#adash {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.anav-item{
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+.anav-link{
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 20px;
+  border-radius: 6px;
+}
+
+.admin-dashboard-official{
+  margin-left: 250px; /* Same width as your sidebar */
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #f8f9fa; /* optional: gives a nice light background */
+}

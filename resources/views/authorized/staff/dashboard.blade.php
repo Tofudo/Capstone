@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+    @include('components.staff-nav')
     <h1>STAFF Login Successful</h1>
 
     <form action="{{ route('logout') }}" method="POST" style="display: inline;">

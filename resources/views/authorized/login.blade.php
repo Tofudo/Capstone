@@ -13,9 +13,9 @@
                     <div class="card" style="border-radius: 1rem; background-color: #ffffff; color: #485B8C;">
                         <div class="card-body py-0 px-5 text-center">
 
-                            <div class="mb-md-5 mt-md-4 py-0">
-
-                                <h2 class="fw-bold mb-2 mt-5 text-uppercase" style="color: #485B8C;">WELCOME</h2>
+                            <div class="mb-md-4 mt-md-4 py-0">
+                            <img src="{{ asset('images/lslc_logo_name2.png') }}" alt="App Logo" class="img-fluid mb-3" style="height:150px">
+                                <h2 class="fw-bold mb-1 mt-1 text-uppercase" style="color: #485B8C;">WELCOME</h2>
                                 <p class="mb-5" style="color: #485B8C;">Enter your username and password</p>
 
 
