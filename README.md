@@ -41,7 +41,7 @@ or <br>
 2. Create a New Terminal in VS Code and run the following command: <br>
 
 ```php artisan serve``` <br>
-   and click the link 127.0.0.1:8000 <br>
+   and click the link `http://127.0.0.1:8000` <br>
 3. Create anoter New Terminal in VS Code and run the following command: <br>
 ```npm run dev```<br>
     and click the link `http://localhost:5173/` <br>
