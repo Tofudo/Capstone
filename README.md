@@ -34,8 +34,9 @@ or <br>
     and click the link `http://localhost:5173/`
 
 <h1 align="center">Running the Project</h1>
-These instructions are for: <br>
-- If you have already cloned the repository in your computer/laptop and are going to run the project <br>
+
+**These instructions are for:** <br>
+ - If you have already cloned the repository in your computer/laptop and are going to run the project <br>
 1. Open XAMPP and Start APACHE and MySQL <br>
 2. Create a New Terminal in VS Code and run the following command: <br>
 
