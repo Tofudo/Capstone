@@ -1,10 +1,30 @@
-.gradient-custom {
-/* fallback for old browsers */
-background: #ffffff;
+.login-bg{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
 
-/* Chrome 10-25, Safari 5.1-6 */
-background: -webkit-linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
+.card{
+  border-radius: 1rem; 
+  background-color: #ffffff; 
+  color: #485B8C;
+}
 
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255))
+h2, p{
+  color: #485B8C;
+}
+
+.form-control{
+  background-color: #ffffff; 
+  color: #485B8C; 
+  border: 1px solid #485B8C;
+}
+
+.loginBtn{
+  background-color: #485B8C; 
+  font-weight: bold;
+  color: white; 
+  border: none;
 }

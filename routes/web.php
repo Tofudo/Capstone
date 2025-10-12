@@ -44,7 +44,17 @@ Route::get('/authorized/login', [AuthController::class, 'showLoginForm'])->name(
 Route::post('/authorized/login', [AuthController::class, 'login'])->name('login');
 
 // Dashboard (protected)
-Route::get('/authorized/dashboard', [AuthController::class, 'dashboard'])->name('dashboard');
+//Route::get('/authorized/dashboard', [AuthController::class, 'dashboard'])->name('dashboard');
+
+// Admin Dashboard
+Route::get('/authorized/admin/dashboard', function () {
+    return view('authorized.admin.dashboard');
+})->name('admin.dashboard');
+
+// Staff Dashboard
+Route::get('/authorized/staff/dashboard', function () {
+    return view('authorized.staff.dashboard');
+})->name('staff.dashboard');
 
 
 Route::post('/authorized/logout', [AuthController::class, 'logout'])->name('logout');

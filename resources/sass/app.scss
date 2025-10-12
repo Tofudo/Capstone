@@ -3,6 +3,9 @@
 @use 'book';
 @use 'passenger';
 @use 'login';
+@use 'admin';
+@use 'staff';
+@use 'authHeader';
 
 
 body {
