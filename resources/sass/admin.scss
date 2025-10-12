@@ -6,19 +6,21 @@ body {
 
 .admin-nav {
   position: fixed;
-  top: 0;
+  top: 70px;
   left: 0;
-  height: 100vh;
+  height: calc(100vh - 70px);
   width: 240px;
   background-color: #485b8c;
   color: #fff;
-  padding-top: 5px;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   transition: width 0.3s ease-in-out;
+  z-index: 1000;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
+
 
 /* === COLLAPSED SIDEBAR === */
 .admin-nav.collapsed {
@@ -28,8 +30,10 @@ body {
 .anav {
   list-style: none;
   margin: 0;
-  padding: 0 20px;
+  padding: 10px 15px;
   flex-grow: 1;
+  width: 100%;
+  overflow: hidden;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -40,7 +44,7 @@ body {
 
 .anav-item {
   color: #ffffff;
-  margin: 4px 0;
+  margin: 1px 0;
 }
 
 .anav-link {
@@ -49,14 +53,16 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 18px;
+  padding: 8px 18px;
   border-radius: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   transition: background-color 0.2s ease-in-out;
 }
 
-/* Hover color */
 .anav-link:hover {
-  background-color: #3b4a73;
+  background-color: #3a4a75;
   color: #ffffff;
 }
 
@@ -100,9 +106,10 @@ body {
 
 /* === DASHBOARD CONTENT === */
 .admin-body {
-  margin-left: 250px;
+  margin-left: 240px;
+  margin-top: 70px; /* ⬅️ add this */
   padding: 20px;
-  min-height: 100vh;
+  min-height: calc(100vh - 70px); /* so it fits under the header */
   background-color: #f8f9fa;
   transition: margin-left 0.3s ease;
 }
