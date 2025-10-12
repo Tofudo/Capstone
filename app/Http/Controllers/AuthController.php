@@ -33,7 +33,7 @@ class AuthController extends Controller
             Session::put('user_id', $admin->admin_id);
             Session::put('user_role', 'admin');
             Session::put('username', $admin->admin_user);
-            return redirect()->route('dashboard');
+            return redirect()->route('admin.dashboard');
         }
 
         // Check staff
@@ -43,7 +43,7 @@ class AuthController extends Controller
             Session::put('user_id', $staff->staff_id);
             Session::put('user_role', 'staff');
             Session::put('username', $staff->staff_user);
-            return redirect()->route('dashboard');
+            return redirect()->route('staff.dashboard');
         }
 
         return back()->withErrors(['username' => 'Invalid username or password'])->withInput();
@@ -53,13 +53,16 @@ class AuthController extends Controller
     public function dashboard()
     {
         if (!Session::has('user_id')) {
-            return redirect()->route('login');
+            return redirect()->route('login.form');
         }
 
-        return view('authorized.dashboard', [
-            'username' => Session::get('username'),
-            'role' => Session::get('user_role'),
-        ]);
+        if (Session::get('user_role') === 'admin') {
+            return redirect()->route('admin.dashboard');
+        } elseif (Session::get('user_role') === 'staff') {
+            return redirect()->route('staff.dashboard');
+        }
+
+        return redirect()->route('login.form');
     }
 
     public function logout(Request $request)

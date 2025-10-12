@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.admin-nav {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  height: calc(100vh - 70px);
+  width: 240px;
+  background-color: #485b8c;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: width 0.3s ease-in-out;
+  z-index: 1000;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+/* === COLLAPSED SIDEBAR === */
+.admin-nav.collapsed {
+  width: 60px;
+}
+
+.anav {
+  list-style: none;
+  margin: 0;
+  padding: 10px 15px;
+  flex-grow: 1;
+  width: 100%;
+  overflow: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#adash {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.anav-item {
+  color: #ffffff;
+  margin: 1px 0;
+}
+
+.anav-link {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 18px;
+  border-radius: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.anav-link:hover {
+  background-color: #3a4a75;
+  color: #ffffff;
+}
+
+/* Icon style */
+.anav-link i {
+  font-size: 18px;
+  min-width: 24px;
+  text-align: center;
+}
+
+/* Text label */
+.anav-label {
+  white-space: nowrap;
+  transition: opacity 0.2s ease, visibility 0.3s ease;
+}
+
+/* Hide text when collapsed */
+.admin-nav.collapsed .anav-label {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Center icons in collapsed state */
+.admin-nav.collapsed .anav-link {
+  justify-content: center;
+}
+
+/* === HIDE ALL ITEMS EXCEPT COLLAPSE BUTTON WHEN COLLAPSED === */
+.admin-nav.collapsed .anav-item:not(#collapseBtn) {
+  opacity: 0;
+  transform: translateY(10px) scale(0.98);
+  transition: all 0.25s ease-in-out;
+  pointer-events: none;
+}
+
+.admin-nav .anav-item {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: all 0.25s ease-in-out;
+}
+
+/* === DASHBOARD CONTENT === */
+.admin-body {
+  margin-left: 240px;
+  margin-top: 70px; /* ⬅️ add this */
+  padding: 20px;
+  min-height: calc(100vh - 70px); /* so it fits under the header */
+  background-color: #f8f9fa;
+  transition: margin-left 0.3s ease;
+}
+
+/* Adjust margin when sidebar is collapsed */
+.admin-body.collapsed {
+  margin-left: 80px;
+}
+
+/* Collapse Menu Button */
+#collapseBtn {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin-top: auto;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+#collapseBtn:hover {
+  background-color: #3b4a73;
+  color: #ffffff;
+}
