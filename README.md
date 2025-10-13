@@ -16,7 +16,7 @@
 
 ```composer install```<br>
 12. Rename the .env.example file to .env <br>
-    *If there is no .env file upon installation, please send me a message -soph*
+    *If there is no .env file upon installation, please send me a message -soph* <br>
 13. Create the key by using the following command: <br>
 ```php artisan key:generate```<br>
 14. Execute the migrations using the following command: <br>
