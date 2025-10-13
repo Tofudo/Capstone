@@ -28,7 +28,7 @@ or <br>
 ```npm install```<br>
 17. Run the PHP server using the following command: <br>
 ```php artisan serve```<br>
-    and click the link `http://127.0.0.1:8000`
+    and click the link `http://127.0.0.1:8000` <br>
 18. Create a new terminal in VS Code and run the Node.js server using the following command: <br>
 ```npm run dev```<br>
     and click the link `http://localhost:5173/`
